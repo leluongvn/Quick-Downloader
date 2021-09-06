@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "940238417892",
+    "firebase_url": "https://indiandownloader.firebaseio.com",
+    "project_id": "indiandownloader",
+    "storage_bucket": "indiandownloader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940238417892:android:aa001c431a195e0b64a1f1",
+        "android_client_info": {
+          "package_name": "com.allvideodownloader.withoutwatermarkdownloader.allinonevideodownloader.quickdownloadercode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940238417892-bvecge52lnntj5va8a0c99d6el6p5rbp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAspdUTwJkTsv-q05H5Du5V2D2MJ_nnav0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940238417892-bvecge52lnntj5va8a0c99d6el6p5rbp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

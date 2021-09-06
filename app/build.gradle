@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.crashlytics'
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:0.12.10'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.allvideodownloader.withoutwatermarkdownloader.allinonevideodownloader.quickdownloadercode"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk.abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+
+
+        manifestPlaceholders = [onesignal_app_id               : '2df6d13e-71e2-4f73-8f1b-c90e780db203',
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: 'REMOTE']
+
+
+    }
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.31"
+
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'com.karumi:dexter:5.0.0'
+
+
+    implementation 'com.onesignal:OneSignal:3.15.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.7.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.3.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.1'
+
+
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.jsibbold:zoomage:1.2.0'
+    implementation 'org.apache.commons:commons-lang3:3.11'
+    implementation 'commons-io:commons-io:2.8.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+
+    //inbuilt player
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.4'
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.facebook.android:audience-network-sdk:6.4.0'
+    implementation 'com.google.android.gms:play-services-ads:19.4.0'
+    //rest api retrofit
+
+    implementation 'com.github.KhunHtetzNaing:xGetter:3.0'
+
+    implementation 'com.google.firebase:firebase-crashlytics:17.2.2'
+    implementation 'com.google.firebase:firebase-analytics:17.6.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

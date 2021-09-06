@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white30">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/RLTopLayout"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@color/colorPrimaryDark">
+
+                    <ImageView
+                        android:id="@+id/imBack"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:foreground="?android:selectableItemBackground"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_back" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toEndOf="@+id/imBack"
+                        android:text="@string/download_instagram_videos_images"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="10dp">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="5dp">
+
+
+                        <RelativeLayout
+                            android:id="@+id/LLOpenInstagram"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp">
+
+
+                            <ImageView
+                                android:id="@+id/iv_imageTitle"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/circle"
+                                android:padding="12dp"
+                                android:src="@drawable/insta_logo" />
+
+                            <TextView
+
+                                android:id="@+id/tvAppTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_imageTitle"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/insta_app_name"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+
+                            <RelativeLayout
+                                android:id="@+id/RLLoginInstagram"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvAppTitle"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp">
+
+                                <TextView
+                                    android:id="@+id/tvLoginInstagram"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:padding="10dp"
+                                    android:text="@string/download_from_private_account"
+                                    android:textColor="@color/black"
+                                    android:textSize="13dp" />
+
+                                <Switch
+                                    android:id="@+id/SwitchLogin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/tvLoginInstagram"
+                                    android:clickable="false"
+                                    android:text=""
+                                    android:theme="@style/SCBSwitch" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/RLLoginInstagram"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif"
+                                android:text="@string/click_to_open_instagram"
+                                android:textColor="@color/black30"
+                                android:textSize="13sp"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RLTopLayout"
+                android:layout_marginTop="-70dp"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/RLEdittextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="3dp"
+                    android:padding="10dp">
+
+                    <EditText
+                        android:id="@+id/et_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/et_back"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/paste_image_or_video_link"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black90"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/RLDownloadLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_below="@+id/et_text"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+
+                        <Button
+                            android:id="@+id/paste"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/et_back"
+                            android:gravity="center"
+                            android:padding="14dp"
+                            android:text="@string/paste"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+
+
+                        <Button
+
+                            android:id="@+id/downloadBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/btn_gredient"
+                            android:gravity="center"
+                            android:padding="14dp"
+                            android:text="@string/download"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="More Insta Tools"
+                    android:visibility="gone"
+                    android:textColor="@color/black"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="15dp"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <RelativeLayout
+
+
+                        android:id="@+id/LLOpenInstagram1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp">
+
+
+                        <ImageView
+                            android:id="@+id/iv_imageTitle1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circle"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_sd_status" />
+
+                        <TextView
+
+                            android:id="@+id/tv_stories_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_imageTitle1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/insta_stories"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_stories_title"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif"
+                            android:text="Click to Login >"
+                            android:textColor="@color/black30"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/item_banner_ads" />
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Quick Downloader</string>
+    <string name="tag_line">Best All In One Video Downloader</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="apps">Apps</string>
+    <string name="downloads">Downloads</string>
+    <string name="settings">Settings</string>
+    <string name="tiktok">TikTok</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="twitter">Twitter</string>
+    <string name="whatsapp">WhatsApp Status</string>
+    <string name="alfaaz" translatable="false">Alfaaz App</string>
+    <string name="paste_tiktok_link">Paste TikTok Link</string>
+    <string name="with_watermark" translatable="false">With Watermark</string>
+    <string name="without_watermark" translatable="false">Without Watermark</string>
+
+
+
+    <string name="share_txt" translatable="false">"Hey download Videos/Images from Instagram, Facebook &amp; *TikTok, Likee Videos Without Watermark?* Click the link below > https://play.google.com/store/apps/details?id= "</string>
+    <string name="share_image_via" translatable="false">Share File via...</string>
+    <string name="share_app_message" translatable="false">Hey download Videos/Images from Instagram, Facebook &amp; *TikTok, Likee Videos Without Watermark?* Click the link below > https://play.google.com/store/apps/details?id= </string>
+
+    <string name="insta_app_name">Instagram</string>
+    <string name="insta_tag"><![CDATA[Download Instagram Images & Videos]]></string>
+    <string name="whatsapp_app_name">WA &amp; WB Saver</string>
+    <string name="whatsapp_tag"><![CDATA[Save Whatsapp Status Image & Videos]]></string>
+    <string name="tiktok_app_name">TikTok</string>
+    <string name="tiktok_tag">Download TikTok Videos</string>
+    <string name="facebook_app_name">Facebook</string>
+    <string name="fcebook_tag">Download Facebook Videos</string>
+    <string name="twitter_app_name">Twitter</string>
+    <string name="twitter_tag"><![CDATA[Download Twitter Images & Videos]]></string>
+    <string name="gallery_name">Gallery</string>
+    <string name="gallery_tag">View All Your Downloaded Media</string>
+    <string name="aboutus_name">About Us</string>
+    <string name="aboutus_tag">Know More About App</string>
+    <string name="share_app_name">Share App</string>
+    <string name="share_app_tag">Share App with Your Friends</string>
+    <string name="rate_app_name">Rate App</string>
+    <string name="rate_tag">Show Some Love. Rate on Play Store</string>
+    <string name="more_app_name">More App</string>
+    <string name="more_app_tag">View Our Other Creations</string>
+    <string name="paste_link">Paste Your Link</string>
+    <string name="download">Download</string>
+    <string name="paste">Paste</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+    <string name="likee_app_name" translatable="false">Likee</string>
+    <string name="downloading_video">Downloading Video</string>
+    <string name="download_complete">Download Completed</string>
+    <string name="paste_image_or_video_link">Paste Image or Video link</string>
+    <string name="download_from_private_account">Download from Private Account</string>
+    <string name="click_to_open_instagram">Click to open Instagram</string>
+    <string name="download_instagram_videos_images">Download Instagram Videos/Images</string>
+    <string name="download_likee_videos" translatable="false">Download Likee Videos</string>
+    <string name="download_facebook_videos_images">Download Facebook Videos/Images</string>
+    <string name="paste_your_facebook_video_image_link">Paste Your Facebook Video/Image Link</string>
+    <string name="click_to_open_facebook">Click to open Facebook</string>
+    <string name="click_to_open_likee">Click to open Likee</string>
+    <string name="click_to_open_tiktok">Click to open TikTok</string>
+    <string name="download_tiktok_videos">Download TikTok Videos</string>
+    <string name="repost">Repost</string>
+    <string name="click_to_open_twitter">Click to open Twitter</string>
+    <string name="downloaded_videos_images">My Downloads</string>
+    <string name="appNotWorking">App Not Working</string>
+    <string name="step1">Step 1:- If App dont work, please contact us by email before Dropping Any Negative Reviews.</string>
+    <string name="step2">Step 2:- If Without WaterMark option doesnt work, It means They Have updated the app and will take us time to resolve it.</string>
+    <string name="step3">Step 3:- If Watermark showing in the video it means, Video was edited before.</string>
+    <string name="step4">Step 4:- If you are suffering slow video download, Make sure you have High Speed Internet Connection</string>
+
+    <string name="ok">Ok</string>
+    <string name="default_notification_channel_id" translatable="false">helo</string>
+    <string name="cache_cleared">Cache Cleared</string>
+    <string name="getting_download_link">Hang tight... Generating Video Link</string>
+    <string name="somthing">Error while Downloading... Try Again</string>
+    <string name="don_start">Downloading Started</string>
+    <string name="downloading_des">Your file is downloading</string>
+    <string name="roposo">Roposo</string>
+    <string name="click_to_open">Click Me to Open</string>
+    <string name="downlad_roposo_videos">Downlad Roposo Video</string>
+    <string name="downlad_josh_videos">Download Josh Videos</string>
+    <string name="snack" translatable="false">Snake</string>
+    <string name="sharechat" translatable="false">Sharechat</string>
+    <string name="trell" translatable="false">Trell</string>
+    <string name="triller" translatable="false">Triller</string>
+    <string name="josh" translatable="false">Josh</string>
+    <string name="paste_any_link">Paste any download link </string>
+    <string name="insta_stories" translatable="false">View &amp; Download Insta Stories</string>
+    <string name="no_result_found">No Result Found</string>
+
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Admob_inter_home" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="fb_inter_home" translatable="false">330066225017223_330068618350317</string>
+    <string name="fb_banner" translatable="false">330066225017223_330068618350317</string>
+
+    <string name="unity_home" translatable="false">unity_home</string>
+    <string name="ads_not_enable" translatable="false">\"Ads not Enable. To Turn on Ads, Go To UTILS and make IS_ADS_ENABLE= true \"</string>
+    <string name="download_takatak_videos">Download Takatak Videos</string>
+    <string name="download_moj_videos">Download moj Videos</string>
+    <string name="mx">Takatak</string>
+    <string name="moj">Moj</string>
+    <string name="change_lang">change Language</string>
+    <string name="english">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="cancel">Cancel</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="or_select_apps">Or Select Apps</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="contact">Contact Us</string>
+    <string name="cleardata">Clear Cache</string>
+
+</resources>

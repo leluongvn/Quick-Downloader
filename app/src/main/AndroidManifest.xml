@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.allvideodownloader.quickdownloader2020">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.allvideodownloader.quickdownloader2020.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+
+        </provider>
+
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.FacebookActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.TikTokActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.WhatsappActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.InstagramActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.FullViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.GalleryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.TwitterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.MxTakatakActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.SettingActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.RoposoActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.ChingariActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.JoshActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.SnackActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.SharechatActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.TrellActivity" />
+        <activity android:name="com.allvideodownloader.quickdownloader2020.activity.TrillerActivity" />
+        <activity
+            android:name="com.allvideodownloader.quickdownloader2020.activity.VideoPlayActivity"
+
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:supportsPictureInPicture="true"
+
+
+            />
+        <activity android:name=".activity.MojActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+    </application>
+
+</manifest>

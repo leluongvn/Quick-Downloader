@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#55000000"
+    android:tag="layout/dialog_download_file_0">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5.0dip"
+        app:cardElevation="0.100000024dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/layout_download"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/layout_uploading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:text="Downloading Your File"
+                        android:textColor="@color/black" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_download_video"
+                        style="?android:progressBarStyleHorizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="12.0dip"
+                        android:layout_gravity="center"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:max="100"
+                        android:progressDrawable="@drawable/pb" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cancel_download"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    android:layout_marginBottom="20.0dip"
+                    android:background="#ffee3252"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:gravity="center"
+                        android:text="Cancel"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#ffeeeeee" />
+
+            <FrameLayout
+                android:id="@+id/frame_ad_container"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffdddddd"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout_ad_warning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="270.0dip"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ad"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/black90" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/admob_native_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8.0dip" />
+
+                <com.facebook.ads.NativeAdLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8.0dip"
+                    android:orientation="vertical" />
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
